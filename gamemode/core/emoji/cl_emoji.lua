@@ -4,7 +4,7 @@ if not file.Exists("tfil/m_emoji_index.txt", "DATA") then
 	local Data = DATA:Split( ";" )
 	local NewTab = {}
 	for k, v in pairs( Data ) do
-		NewTab[ v ] = "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/" .. v .. ".png"" .. v .. ".png"
+		NewTab[ v ] = "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/" .. v .. ".png"
 	end
 	file.Write( "tfil/m_emoji_index.txt",  util.TableToJSON( NewTab ) )
 end
